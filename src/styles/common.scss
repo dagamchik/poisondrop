@@ -1,0 +1,54 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+ul {
+    padding: 0;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.container-form {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.buttons {
+    .prev-card {
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        width: 100px;
+        background-color: rgb(54, 54, 202);
+        color: #fff;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        margin-right: 20px;
+        &:hover {
+            background-color: rgb(158, 158, 248);
+        }
+    }
+    .next-card {
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        width: 100px;
+        background-color: rgb(54, 54, 202);
+        color: #fff;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        &:hover {
+            background-color: rgb(158, 158, 248);
+        }
+    }
+}
